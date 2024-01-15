@@ -11,13 +11,9 @@ public class EnterPoint {
     public static Date START;
 
     public static void main(String[] args) throws SQLException, IOException, ParseException, InterruptedException {
-//            String dbURL = "jdbc:oracle:thin:@10.12.57.101:1523:ARGODB2";
-//            String strUserID = "POWERDB";
-//            String strPassword = "Trailmsg23nigh";
+
         delayedStart();
-//        String dbURL = "jdbc:oracle:thin:@10.12.57.101:1522:EMISDB";
-//        String strUserID = "amr_russia";
-//        String strPassword = "amr_russia";
+        
         Property property=new Property();
         try {
             myConnection = DriverManager.getConnection(property.getDbURL(), property.getUserID(), property.getPassword());
